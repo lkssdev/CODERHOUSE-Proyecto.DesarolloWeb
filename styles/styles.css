@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+
+}
+.logo{
+    background-color: #000D09;
+}
+.img-nav{
+    height: 75px;
+}
+.navbar{
+    height: 70px;
+    width: auto;
+    background-color: #000D09;
+}
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.navbar-nav a{
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px;
+}
+.navbar-nav a:hover{
+    color: #01401C;
+    transition: 0.4s;
+}
+.parallax-main{
+    background-image: url(../media/images/plaza.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-main h1{
+    position: absolute;
+    top: 400px;
+    left: 5%;
+    font-size: 6rem;
+    color: #fff;
+    text-shadow: 0px 0px 35px #000;
+}
+.parallax-main p{
+    position: absolute;
+    top: 520px;
+    left: 25%;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0px 0px 35px #000;
+}
+.data1{
+    height: 50vh;
+    background-color: #012611;
+}
+.data1 h4{
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: start;
+    margin-left: 15%;
+    align-items: center;
+    position: relative;
+    top: 46%;
+
+}
+.data2{
+    height: 50vh;
+    background-color: #55A603;
+}
+.data2 h4{
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    margin-right: 15%;
+    align-items: center;
+    position: relative;
+    top: 46%;
+
+}
+.data3{
+    height: 50vh;
+    background-color: #A8BF56;
+}
+.data3 h4{
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: start;
+    margin-left: 15%;
+    align-items: center;
+    position: relative;
+    top: 46%;
+
+}
+.data4{
+    height: 50vh;
+    background-color: #01401C;
+}
+.data4 h4{
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    top: 25%;
+
+}
+.data4 h3{
+    font-size: 6rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+
+}
+@keyframes show {
+	from {
+		opacity: 0;
+		scale: 30%;
+	}
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
+}
+.data1 h4{
+    view-timeline-name: --titulos;
+    view-timeline-axis: block;
+    animation-timeline: --titulos;
+    animation-name: show;
+    animation-range: entry 20% cover 40%;
+    animation-fill-mode: both;
+}
+.data2 h4{
+    view-timeline-name: --titulos;
+    view-timeline-axis: block;
+    animation-timeline: --titulos;
+    animation-name: show;
+    animation-range: entry 20% cover 40%;
+    animation-fill-mode: both;
+}
+.data3 h4{
+    view-timeline-name: --titulos;
+    view-timeline-axis: block;
+    animation-timeline: --titulos;
+    animation-name: show;
+    animation-range: entry 20% cover 40%;
+    animation-fill-mode: both;
+}
+
+.sobrenos-cont{
+
+    background-color: #012611;
+
+}
+.sobrenos-cont h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 6rem;
+    color: #fff;
+    text-shadow: 0px 0px 35px #000;
+}
+
+.cont{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 400px ) ;
+    grid-gap: 20px;
+    padding: 35px;
+
+}
+.item1{
+    background-image: url(../media/images/canelones_antiguo.jpg);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #000;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.item2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+}
+.item3{
+    background-image: url(../media/images/mapa_canelones.jpg);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #000;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.item4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+}
+.item5{
+    background-image: url(../media/images/plaza_gente.jpg);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #000;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.item6{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.slider ul{
+    width: 300%;
+    display: flex;
+    animation: slide 20s infinite alternate linear;
+    list-style: none;
+    
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+    
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+
+}
+@keyframes slide{
+    0%, 20%{margin-left: 0}
+    40%, 60%{margin-left: -100%}
+    80%, 100%{margin-left: -200%}
+}
+
+.footer-contacto{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
