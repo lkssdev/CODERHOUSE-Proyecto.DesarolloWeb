@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+
+
+}
+
+
+.logo {
+    background-color: #005B00;
+}
+
+.img-nav {
+    height: 75px;
+}
+
+.navbar {
+    height: 70px;
+    width: auto;
+    background: (linear-gradient(to bottom, #005B00, #008200));
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar-nav a {
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #fff;
+    padding: 6px;
+}
+
+.navbar-nav a:hover {
+    color: #01401C;
+    transition: 0.4s;
+}
+
+.parallax-main {
+    background-image: url(../media/images/plaza.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.parallax-main h1 {
+    position: absolute;
+    top: 400px;
+    left: 5%;
+    font-size: 6rem;
+    color: #fff;
+    text-shadow: 0px 0px 35px #000;
+}
+
+.parallax-main p {
+    position: absolute;
+    top: 520px;
+    left: 25%;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0px 0px 35px #000;
+}
+
+.data1 {
+    height: 50vh;
+    background-color: #012611;
+}
+
+.data1 h4 {
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: start;
+    margin-left: 15%;
+    align-items: center;
+    position: relative;
+    top: 46%;
+
+}
+
+.data2 {
+    height: 50vh;
+    background-color: #55A603;
+}
+
+.data2 h4 {
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    margin-right: 15%;
+    align-items: center;
+    position: relative;
+    top: 46%;
+
+}
+
+.data3 {
+    height: 50vh;
+    background-color: #A8BF56;
+}
+
+.data3 h4 {
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: start;
+    margin-left: 15%;
+    align-items: center;
+    position: relative;
+    top: 46%;
+
+}
+
+.sobrenos-cont {
+
+    background-color: #012611;
+
+}
+
+.sobrenos-cont h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 6rem;
+    color: #fff;
+    text-shadow: 0px 0px 35px #000;
+}
+
+.cont {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 400px);
+    grid-gap: 20px;
+    padding: 35px;
+
+}
+
+.item1 {
+    background-image: url(../media/images/canelones_antiguo.jpg);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #000;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.item2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.item3 {
+    background-image: url(../media/images/mapa_canelones.jpg);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #000;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.item4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.item5 {
+    background-image: url(../media/images/plaza_gente.jpg);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #000;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.item6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.slider ul {
+    width: 300%;
+    display: flex;
+    animation: slide 20s infinite alternate linear;
+    list-style: none;
+
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+
+}
+
+@keyframes slide {
+
+    0%,
+    20% {
+        margin-left: 0
+    }
+
+    40%,
+    60% {
+        margin-left: -100%
+    }
+
+    80%,
+    100% {
+        margin-left: -200%
+    }
+}
+
+.footer-contacto {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Inclusion de SCSS */
+
+.tittle {
+    color: green;
+    padding: 10px 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border: none;
+    margin: 20px;
+    height: 570px;
+    width: 450px;
+
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+        transform: scale(1.03);
+    }
+
+    a {
+        text-decoration: none;
+        color: initial;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .text-muted i {
+        margin: 0 10px;
+    }
+
+    .card-detail {
+
+        margin: 0 0 0 16px;
+        padding-bottom: 160px;
+
+    }
+}
+
+.intro {
+    height: 100vh;
+    background-color: #01401C;
+}
+
+.intro h4 {
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    top: 15%;
+
+}
+
+.intro h3 {
+    font-size: 6rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 16%;
+
+}
+
+footer {
+    background: (linear-gradient(to top, #005B00, #008200));
+}
+
+.footer-down {
+    background: (linear-gradient(to top, #000, #005B00));
+}
+
+// ## Default
+$hero-color: #FFF;
+$hero-height: 100vh;
+$hero-width: 100vw;
+$hero-bg-mix: rgba(#29042f, 0.4); // hide with false
+
+.hero {
+    display: grid;
+    position: relative;
+    grid-template-columns: $hero-width;
+    grid-template-rows: $hero-height;
+    place-items: center;
+    overflow: hidden;
+    animation: clip-hero-anim 1.25s cubic-bezier(0.29, 0.8, 0.8, 0.98);
+    will-change: clip-path;
+
+    &__bg,
+    &__cnt {
+        align-self: center;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    // Images
+    &__bg {
+        display: grid;
+        position: relative;
+        z-index: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+        animation: fade-in 0.75s linear;
+        will-change: opacity;
+
+        // Smoothing background gradient
+        @if ($hero-bg-mix) {
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                z-index: 5;
+                top: -10%;
+                right: -10%;
+                bottom: -10%;
+                left: -10%;
+                background: $hero-bg-mix;
+                background-blend-mode: screen;
+            }
+        }
+
+        & picture {
+            display: flex;
+            height: $hero-height;
+            width: $hero-width;
+            animation: scaling-hero-anim 4s 0.25s cubic-bezier(0, 0.71, 0.4, 0.97) forwards;
+            will-change: transform;
+        }
+
+        & img {
+            display: block;
+            object-fit: cover;
+            object-position: 77% 50%;
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    &__cnt {
+        display: grid;
+        position: relative;
+        place-items: center;
+        z-index: 10;
+        color: $hero-color;
+
+        opacity: 0;
+        animation: fade-in 0.75s 1.5s linear forwards;
+
+        & svg {
+            height: 12vw;
+
+            & path {
+                fill: #FFF;
+            }
+        }
+
+        & h1 {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// ## Animation
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaling-hero-anim {
+    from {
+        transform: scale(1.25);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes clip-hero-anim {
+    from {
+        clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    }
+
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+.hero__cnt h3 {
+    font-size: 3rem;
+    text-shadow: 0px 0px 35px #000;
+}
+
+.hero__cnt h2 {
+    font-size: 4rem;
+    text-shadow: 0px 0px 35px #000;
+}
+
+
