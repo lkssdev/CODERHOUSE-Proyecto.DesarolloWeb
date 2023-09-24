@@ -46,35 +46,388 @@
                     <li><a href="noticias.html">Noticias</a></li>
                     <li><a href="gastronomia.html">Gastronomia</a></li>
                     <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
 
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="slider">
-        <ul>
-            <li><a href="./noticias.html"><img src="../media/images/noticias.jpg" alt="Noticias"></a></li>
-            <li><a href="./actividades.html"><img src="../media/images/actividades.jpg" alt="Actividades"></a></li>
-            <li><a href="./gastronomia.html"><img src="../media/images/gastronomia.jpg" alt="Gastronomia"></a></li>
-        </ul>
+    <img class="gastronomy-responsive" src="../media/images/gastronomia.jpg" alt="">
+    <div class="container-gastronomy">
+        <div class="row gallery-wrap">
+            <div class="col-12 col-md-6 col-lg-3 item-g item-1"></div>
+            <div class="col-12 col-md-6 col-lg-3 item-g item-2"></div>
+            <div class="col-12 col-md-6 col-lg-3 item-g item-3"></div>
+            <div class="col-12 col-md-6 col-lg-3 item-g item-4"></div>
+            <div class="col-12 col-md-6 col-lg-3 item-g item-5"></div>
+        </div>
     </div>
-    <footer class=" text-white" style="background-color:#000d09;">
-        <div class="container p-4">
-            <section class="mb-4">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                    distinctio earum repellat quaerat voluptatibus placeat nam,
-                    commodi optio pariatur est quia magnam eum harum corrupti dicta,
-                    aliquam sequi voluptate quas.
-                </p>
-                <a href="./contacto.html"> Contacto</a>
-            </section>
+    <div class="main-gastronomy">
+        <article class="sidebar">
+            <h6>Tipos de establecimiento</h6>
+            <div class="category">
+                <input type="checkbox" id="restaurante">
+                <label for="restaurante">Restaurante</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="parador">
+                <label for="parador">Parador</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="cafe">
+                <label for="cafe">Café</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="bares-y-pubs">
+                <label for="bares-y-pubs">Bares y pubs</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="solo-delivery">
+                <label for="solo-delivery">Solo delivery</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="heladeria">
+                <label for="heladeria">Heladeria</label>
+            </div>
+            <hr>
+            <h6>Caracteristicas</h6>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="delivery">
+                <label for="delivery">Delivery</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="para-llevar">
+                <label for="para-llevar">Para llevar</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="servicio-de-mesa">
+                <label for="servicio-de-mesa">Servicio de mesa</label>
+            </div>
+            <hr>
+            <h6>Platos</h6>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="hamburguesa">
+                <label for="hamburguesa">Hamburguesa</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="pizza">
+                <label for="pizza">Pizza</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="sushi">
+                <label for="sushi">Sushi</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="chivito">
+                <label for="chivito">Chivito</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="milanesa">
+                <label for="milanesa">Milanesa</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="papas-fritas">
+                <label for="papas-fritas">Papas fritas</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="tacos">
+                <label for="tacos">Tacos</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="helados">
+                <label for="helados">Helados</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="postres">
+                <label for="postres">Postres</label>
+            </div>
+            <hr>
+            <h6>Bebidas</h6>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="refrescos">
+                <label for="refrescos">Refrescos</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="cafe2">
+                <label for="cafe2">Café</label>
+            </div>
+            <div class="category">
+                <input type="checkbox" name="filtro" id="alcohol">
+                <label for="alcohol">Alcohol</label>
+            </div>
+        </article>
+        <div class="container container-gastronomy">
+            <div class="row">
+
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div
+                        class="element restaurante pizza chivito hamburguesa milanesa papas-fritas delivery para-llevar servicio-de-mesa refrescos alcohol postres">
+                        <img class="element-img" src="../media/images/lasbrasas2.jpg"></img>
+                        <h6 class="element-tit"> Las Brasas</h6>
+                        <p class="element-desc"> <span>Restaurante</span> <br> Pizza, Chivito, Hamburguesa, Milanesa,
+                            Papas
+                            Fritas, Postres, Refrescos, Alcohol</p>
+                            <hr>
+                        <div class="element-info"> <a href="tel:+4332 1807"><i class="fa-solid fa-phone"></i><span>+4332
+                                    1807
+                                </span></a><a href="https://maps.app.goo.gl/NHy4U45WG2qGK8KVA" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i><span>José Enrique Rodó</span></a></div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div
+                        class="element restaurante pizza chivito hamburguesa milanesa papas-fritas delivery para-llevar servicio-de-mesa refrescos alcohol postres">
+                        <img class="element-img" src="../media/images/oldcat.jpg"></img>
+                        <h6 class="element-tit"> Old Cat</h6>
+                        <p class="element-desc"> <span>Restaurante</span> <br> Pizza, Chivito, Hamburguesa, Milanesa,
+                            Papas
+                            Frita, Postres, Refrescos, Alcohol</p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+4332 1215"><i class="fa-solid fa-phone"></i><span>+4332
+                                    1215
+                                </span></a><a href="https://maps.app.goo.gl/a7wLrR9Rn28NnT2CA" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i><span>Jose Batlle y Ordoñez 499</span></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div
+                        class="element restaurante pizza chivito hamburguesa milanesa papas-fritas delivery para-llevar servicio-de-mesa refrescos alcohol postres">
+                        <img class="element-img" src="../media/images/restorodo.jpg"></img>
+                        <h6 class="element-tit"> Resto Rodó</h6>
+                        <p class="element-desc"> <span>Restaurante</span> <br> Pizza, Chivito, Hamburguesa, Milanesa,
+                            Papas
+                            Fritas, Postres, Refrescos, Alcohol</p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+598 94 873 949"><i
+                                    class="fa-solid fa-phone"></i><span>+598
+                                    94
+                                    873 949
+                                </span></a><a href="https://maps.app.goo.gl/1HSDJFsYVa7KxQPVA" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i><span>Gaston Rosas 673</span></a></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div
+                        class="element restaurante pizza chivito hamburguesa milanesa papas-fritas delivery para-llevar servicio-de-mesa refrescos alcohol postres">
+                        <img class="element-img" src="../media/images/mundodelsabor.jpg"></img>
+                        <h6 class="element-tit"> El Mundo del Sabor</h6>
+                        <p class="element-desc"> <span>Restaurante</span> <br> Pizza, Chivito, Hamburguesa, Milanesa,
+                            Papas
+                            Fritas, Postres, Refrescos, Alcohol</p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+4332 2740"><i class="fa-solid fa-phone"></i><span>+4332
+                                    2740
+                                </span></a><a href="https://maps.app.goo.gl/AmBkejS7mz6TU1hs7" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i><span>Treinta y Tres 584</span></a></div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div class="element bares-y-pubs delivery para-llevar servicio-de-mesa refrescos alcohol">
+                        <img class="element-img" src="../media/images/barbanegra.jpg"></img>
+                        <h6 class="element-tit"> Barba Negra</h6>
+                        <p class="element-desc"> <span>Bares y pubs</span> <br> Pizza, Hamburguesa, Papas Fritas,
+                            Refrescos,
+                            Alcohol</p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+598 98 714"><i class="fa-solid fa-phone"></i><span>+598
+                                    98
+                                    714 150
+                                </span></a><a href="https://maps.app.goo.gl/6VLrVFKj1kfNt35Z8" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i><span>Tolentino Gonzalez 309</span></a></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div
+                        class="element restaurante parador pizza chivito hamburguesa milanesa papas-fritas para-llevar servicio-de-mesa refrescos alcohol postres">
+                        <img class="element-img" src="../media/images/elrancho.jpg"></img>
+                        <h6 class="element-tit"> El Rancho</h6>
+                        <p class="element-desc"> <span>Restaurante, Parador</span> <br> Pizza, Chivito, Hamburguesa,
+                            Milanesa,
+                            Papas Fritas, Postres, Refrescos, Alcohol</p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+4332 2538"><i class="fa-solid fa-phone"></i><span>+4332
+                                    2538
+                                </span></a><a href="https://maps.app.goo.gl/928AuQ3ZHrviKRiv5" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i><span>Gral. Fructuoso Rivera km
+                                    47</span></a></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div
+                        class="element restaurante parador pizza chivito hamburguesa milanesa papas-fritas para-llevar servicio-de-mesa refrescos alcohol postres">
+                        <img class="element-img" src="../media/images/larueda.jpg"></img>
+                        <h6 class="element-tit"> La Rueda</h6>
+                        <p class="element-desc"> <span>Restaurante, Parador</span> <br> Pizza, Chivito, Hamburguesa,
+                            Milanesa,
+                            Papas Fritas, Postres, Refrescos, Alcohol</p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+4332 0081"><i class="fa-solid fa-phone"></i><span>+4332
+                                    0081
+                                </span></a><a href="https://maps.app.goo.gl/ihBnwkxJ5kH3BgqL7" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i><span>Ruta 11 Km 97. 500</span></a></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div
+                        class="element restaurante pizza chivito hamburguesa milanesa papas-fritas servicio-de-mesa para-llevar refrescos alcohol postres">
+                        <img class="element-img" src="../media/images/restorana11.jpg"></img>
+                        <h6 class="element-tit"> Restoran A... 11</h6>
+                        <p class="element-desc"> <span>Restaurante</span> <br> Pizza, Chivito, Hamburguesa, Milanesa,
+                            Papas
+                            Fritas, Postres, Refrescos, Alcohol</p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+4332 4324"><i class="fa-solid fa-phone"></i><span>+4332
+                                    4324
+                                </span></a><a href="https://maps.app.goo.gl/3RPm7uDpzB4jc7vdA" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i><span>Luis Alberto de Herrera 550</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div class="element heladeria helados delivery para-llevar servicio-de-mesa pizza cafe2">
+                        <img class="element-img" src="../media/images/grido.jpg"></img>
+                        <h6 class="element-tit"> Grido</h6>
+                        <p class="element-desc"> <span>Heladeria</span> <br> Helados, Pizza, Café</p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+4332 4941"><i class="fa-solid fa-phone"></i><span>+4332
+                                    4941
+                                </span></a><a href="https://maps.app.goo.gl/t1UFtqVsEW3UgiS47" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i><span>Treinta Y Tres 604</span></a></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div class="element heladeria helados delivery para-llevar servicio-de-mesa">
+                        <img class="element-img" src="../media/images/chelato.jpg"></img>
+                        <h6 class="element-tit"> Chelato</h6>
+                        <p class="element-desc"> <span>Heladeria</span> <br> Helados</p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+4332 1111"><i class="fa-solid fa-phone"></i><span>+4332
+                                    1111</span></a><a href="https://maps.app.goo.gl/vaeXdqbJ14NpBA7s9"
+                                target="_blank"><i class="fa-solid fa-location-dot"></i><span>Presidente Tomas Berreta
+                                    333</span></a></div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div class="element cafe para-llevar servicio-de-mesa postres cafe2">
+                        <img class="element-img" src="../media/images/politeamacafe.jpg"></img>
+                        <h6 class="element-tit"> Politeama Café</h6>
+                        <p class="element-desc"> <span>Café</span> <br>Café, Postres </p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+4333 3768"><i class="fa-solid fa-phone"></i><span>+4333
+                                    3768</span></a>
+                            <a href="https://maps.app.goo.gl/cykr13MoPrSsBcMy6" target="_blank"><i
+                                    class="fa-solid fa-location-dot"></i><span>Presidente Tomas Berreta 302</span></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div class="element cafe para-llevar servicio-de-mesa postres cafe2">
+                        <img class="element-img" src="../media/images/dulceaurora.jpg"></img>
+                        <h6 class="element-tit"> Dulce Aurora</h6>
+                        <p class="element-desc"> <span>Café</span> <br>Café, Postres </p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+598 99 166 622"><i
+                                    class="fa-solid fa-phone"></i><span>+598
+                                    99
+                                    166 622</span></a><a href="https://maps.app.goo.gl/Mnq5gJBP8HTnEJXW8"
+                                target="_blank"><i class="fa-solid fa-location-dot"></i><span>General Fructuoso Rivera
+                                    367</span></a></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div class="element solo-delivery sushi delivery">
+                        <img class="element-img" src="../media/images/kunaisushi.jpg"></img>
+                        <h6 class="element-tit"> Kunai Sushi</h6>
+                        <p class="element-desc"> <span>Solo Delivery</span> <br> Sushi</p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+598 98 742 436"><i
+                                    class="fa-solid fa-phone"></i><span>+598
+                                    98
+                                    742 436</span></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div class="element solo-delivery sushi delivery">
+                        <img class="element-img" src="../media/images/sushimaki.jpg"></img>
+                        <h6 class="element-tit"> Sushimaki Canelones</h6>
+                        <p class="element-desc"> <span>Solo Delivery</span> <br> Sushi</p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+598 91 520 825"><i
+                                    class="fa-solid fa-phone"></i><span>+598
+                                    91 520 825</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div
+                        class="element solo-delivery pizza chivito hamburguesa milanesa papas-fritas delivery refrescos">
+                        <img class="element-img" src="../media/images/chivitop.jpg"></img>
+                        <h6 class="element-tit"> Chivitop</h6>
+                        <p class="element-desc"> <span>Solo Delivery</span> <br> Pizza, Chivito, Hamburguesa, Milanesa,
+                            Papas
+                            Fritas, Refrescos</p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+598 93 933 404"><i
+                                    class="fa-solid fa-phone"></i><span>+598
+                                    93 933 404</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+                    <div
+                        class="element solo-delivery pizza chivito hamburguesa milanesa papas-fritas tacos delivery refrescos">
+                        <img class="element-img" src="../media/images/alapiedra.jpg"></img>
+                        <h6 class="element-tit"> Delivery a la Piedra</h6>
+                        <p class="element-desc"> <span>Solo Delivery</span> <br> Pizza, Chivito, Hamburguesa,
+                            Milanesa, Papas
+                            Fritas, Tacos, Refrescos</p>
+                        <hr>
+                        <div class="element-info"> <a href="tel:+598 93 507 560"><i
+                                    class="fa-solid fa-phone"></i><span>+598
+                                    93 507 560</span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="footer-down text-center p-3">
-            © 2020 Copyright:
-            <a class="text-white" href="./index.html">Canelones Digital</a>
+        <div class="no-results-background" style="display: none;">
+            <div class="no-results-message">No se encontraron elementos con esos filtros</div>
         </div>
-    </footer>
+    </div>
+    <div class="container-links p-4">
+        <section>
+            <h2 class="text-center"> Canelones Digital</h2>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+
+        </section>
+    </div>
+    <div class="container-data footer-down text-center p-3">
+        © 2023 Copyright
+    </div>
+
+
     <!-- Libreria Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
@@ -101,6 +454,47 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Monitor changes on checkboxes
+            $("input[type='checkbox']").on('change', function () {
+                filterElements();
+            });
+
+            function filterElements() {
+                // Start by showing all elements
+                $(".element").show();
+                $(".no-results-background").hide(); // Hide the no results background initially
+
+                let anyChecked = false; // Variable to check if any checkbox is checked
+                let anyElementVisible = false; // Variable to check if any element is visible
+
+                // Go through all checkboxes
+                $("input[type='checkbox']").each(function () {
+                    if ($(this).is(":checked")) {
+                        anyChecked = true;
+                        let filterClass = $(this).attr('id');
+
+                        // Hide elements that do not have the class of the checked checkbox
+                        $(".element").not('.' + filterClass).hide();
+                    }
+                });
+
+                // Check if any elements are still visible after filtering
+                $(".element").each(function () {
+                    if ($(this).is(":visible")) {
+                        anyElementVisible = true;
+                    }
+                });
+
+                // If no elements are visible and at least one checkbox is checked, show the no results background
+                if (!anyElementVisible && anyChecked) {
+                    $(".no-results-background").show();
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

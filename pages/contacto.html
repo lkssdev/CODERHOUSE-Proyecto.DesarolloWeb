@@ -46,28 +46,66 @@
                     <li><a href="noticias.html">Noticias</a></li>
                     <li><a href="gastronomia.html">Gastronomia</a></li>
                     <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <h1 class="txt-dark d-flex justify-content-center">PRONTO MAS NOVEDADES</h1>
-    <footer class="footer-contacto text-white">
-        <div class="container p-4">
-            <section class="mb-4">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-                    distinctio earum repellat quaerat voluptatibus placeat nam,
-                    commodi optio pariatur est quia magnam eum harum corrupti dicta,
-                    aliquam sequi voluptate quas.
-                </p>
-                <a href="./contacto.html"> Contacto</a>
-            </section>
-        </div>
-        <div class="footer-down text-center p-3">
-            © 2020 Copyright:
-            <a class="text-white" href="./index.html">Canelones Digital</a>
-        </div>
-    </footer>
+    <video loop muted autoplay class="video-contact w-100 mx-auto" src="../media/videos/Canelones.mp4"></video>
+    
+    <div class="container">
+        <div class="container-form row">
+            <div class="info-form col-12 col-md-8">
+                <h2>Contáctanos</h2>
+                <p>¡Hola! ¿Tienes alguna pregunta, inquietud o simplemente quieres saludar? Nos encanta estar en contacto
+                    con nuestra comunidad. Llena el formulario a continuación y nos pondremos en contacto contigo en un
+                    abrir y cerrar de ojos. Tu opinión y tus preguntas nos ayudan a mejorar, ¡así que no seas tímido y
+                    escríbenos!</p>
+                <a href="tel:+4332 2288 1122"><i class="fa-solid fa-phone"></i> +4332 2288 1122</a>
+                <a href="mailto:canelonesdigital2023@gmail.com"><i class="fa-solid fa-envelope"></i>
+                    canelonesdigital2023@gmail.com</a>
+                <a href="https://maps.app.goo.gl/XxFANtmNyGKywiAC8" target="_blank"><i class="fa-solid fa-location-dot"></i>
+                    Tomás Berreta No. 370 - Canelones, Uruguay</a>
+            </div>
+            <div class="col-12 col-md-5">
+                <form action="#" autocomplete="off">
+                    <input type="text" id="name" placeholder="Tu Nombre" class="campo">
+                    <input type="email" id="email" placeholder="Tu Email" class="campo">
+                    <textarea id="message" placeholder="Tu Mensaje..."></textarea>
+                    <div class="center" id="notification">
+                        <div class="check">
+                            <i class="far fa-check-circle"></i>
+                            <h6>Enviado!</h6>
+                        </div>
+                    </div>
+                    <button class="button" id="sendButton">
+                        <a href="#"><span class="button-text">Enviar</span>
+                            <div class="fill-container"></div>
+                        </a></button>
+                </form>
+    
+            </div>
+    </div>
+
+
+
+
+    </div>
+    <div class="container-links p-4">
+        <section>
+            <h2 class="text-center"> Canelones Digital</h2>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+
+        </section>
+    </div>
+    <div class="container-data footer-down text-center p-3">
+        © 2023 Copyright
+    </div>
     <!-- Libreria Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
@@ -91,6 +129,21 @@
         integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Libreria JQuery -->
+    <script>
+        document.getElementById('sendButton').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+            // Mostrar la notificación
+            document.getElementById('notification').style.display = 'flex';
+
+            // Opcional: Ocultar la notificación después de 3 segundos
+            setTimeout(function () {
+                document.getElementById('notification').style.display = 'none';
+            }, 3500);
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
